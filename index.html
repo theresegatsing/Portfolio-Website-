@@ -16,7 +16,8 @@ ul{
 	 overflow: hidden;
 	 margin:0;
 	 padding:0;
-	background-color: rgba(0, 0, 255, 0.5)
+	 background-color: rgba(0, 0, 255, 0.5)
+	 display: flex;
 }
 
 li a:hover{
@@ -30,7 +31,7 @@ li {
 
 li a {
 	text-decoration: none;
-	padding: 0px;
+	padding: 10px 20px;
 	color: white;
 	display:block;
 	text-align: center;
@@ -77,7 +78,7 @@ li {
 
 li a {
   text-decoration: none;
-  padding: 0px;
+  padding: 10px 20px;
   color: white;
   display: block;
   text-align: center;
@@ -102,6 +103,10 @@ li a {
 /* Media queries */
 @media only screen and (max-width: 768px) {
   /* For tablets: */
+
+  ul {
+     flex-direction: column; /* Stack vertically on smaller screens */
+  }
   li a {
     width: 100%;
     float: none;
